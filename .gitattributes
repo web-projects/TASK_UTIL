@@ -1,0 +1,4 @@
+misc/** filter=lfs diff=lfs merge=lfs -text
+
+# Default behavior to automatically normalize line endings
+* text=auto
