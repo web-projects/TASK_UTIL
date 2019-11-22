@@ -15,7 +15,7 @@ namespace TaskUtil
             Console.WriteLine("About to launch a task...");
             _ = Task.Run(async () =>
             {
-                await Task.Delay(100).ConfigureAwait(false);
+                await Task.Delay(1000).ConfigureAwait(false);
                 throw new InvalidOperationException();
             });
             await Task.Delay(5000);
