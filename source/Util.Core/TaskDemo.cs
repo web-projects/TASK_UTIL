@@ -1,16 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
+using Util.Core.Interface;
 
-namespace TaskUtil
+namespace Util.Core
 {
-    class Program
+    public class TaskDemo : ITaskDemo
     {
-        static void Main(string[] args)
-        {
-            RunTaskDemo().Wait();
-        }
+        public string Name { get; }
 
-        private static async Task RunTaskDemo()
+        public TaskDemo(string name) => (Name) = (name);
+
+        public async Task RunTaskDemo()
         {
             Console.WriteLine("About to launch a task...");
             _ = Task.Run(async () =>

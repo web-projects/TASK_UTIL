@@ -64,3 +64,8 @@ For more information to help you get started contributing to the code base pleas
 * **Coding-Style**.md
 * **Contributing**.md
 * **Best-Practice-Patterns**.md
+
+### HISTORY ###
+
+* 20191121 - Initial repository
+* 29181122 - Added Ninject Testing Framework
